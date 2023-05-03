@@ -1,0 +1,20 @@
+n=int(input("Enter how many values? "))
+d={}
+for i in range(n):
+    name=input("Enter student name: ")
+    res=input("Enter whether pass/fail: ")
+    d[name]=res
+for name in d:
+    print(name,d[name],'the exam')
+    
+    o/p---
+    Enter how many values? 3
+    Enter student name: Ram
+    Enter whether pass/fail: pass
+    Enter student name: Sita
+    Enter whether pass/fail: pass
+    Enter student name: lucky
+    Enter whether pass/fail: fail
+    Ram pass the exam
+    Sita pass the exam
+    lucky fail the exam.
