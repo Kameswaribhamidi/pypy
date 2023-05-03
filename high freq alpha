@@ -1,0 +1,17 @@
+para=input("Enter your para:\n")
+d={}
+for i in para:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]+=1
+m=list(d.values())
+fre=max(m)
+for i in d:
+    if d[i]==fre:
+        print(i,d[i])
+        
+o/p---
+Enter your para:
+this is aditya degree college
+e 5
