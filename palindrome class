@@ -1,0 +1,17 @@
+class Palindrome:
+    def pali(self,num):
+        ans=0
+        while(num!=0):
+            rem=num%10
+            ans=(ans*10)+rem
+            num=num//10
+        return ans
+num=int(input("Enter any number? "))
+p=Palindrome()
+res=p.pali(num)
+print(res)
+
+
+o/p---
+Enter any number? 1234
+4321
