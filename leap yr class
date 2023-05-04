@@ -1,0 +1,18 @@
+class Leap:
+    def lpyr(self,year):
+        if year%4==0 and year%100!=0:
+            return 1
+        elif year%400==0:
+            return 1
+        else:
+            return 0
+year=int(input("Enter year? "))
+lp=Leap()
+if lp.lpyr(year):
+    print("It is a leap year")
+else:
+    print("It is not a leap year")
+    
+    o/p---
+    Enter year? 2004
+    It is a leap year.
